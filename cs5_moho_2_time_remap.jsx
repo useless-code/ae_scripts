@@ -183,8 +183,10 @@
                     {
                         cur_frame = first_frame;
                         // Create a time remap keyframe for every frame.
-                        for (i=first_frame;i<=last_frame;i++) 
+                        for (n=0;n<l;n++) 
                         {
+                            // Save Frame numbers
+                            i = returnFrameFromItem(lstLines[n])
                             cur_phoneme = returnPhonemeForFrame(lstLines,i);
                             if (cur_phoneme != "") 
                             {
