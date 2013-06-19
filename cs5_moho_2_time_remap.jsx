@@ -57,7 +57,7 @@
     function returnTimeRemapFrameFromPhoneme(passedItem) {
        // NOTE: This assumes you have a frame in a comp for each phoneme listed in this order (i.e. alphabetically).
          switch(passedItem) {
-            case 'AI':
+            case 'A':
                 f = 0;
                 break;
             case 'E':
@@ -69,28 +69,31 @@
             case 'FV':
                 f = 3;
                 break;
-            case 'L':
+            case 'I':
                 f = 4;
                 break;
-            case 'MBP':
+            case 'L':
                 f = 5;
                 break;
-            case 'O':
+            case 'MBP':
                 f = 6;
                 break;
-            case 'rest':
+            case 'O':
                 f = 7;
+                break;
+            case 'rest':
+                f = 8;
                 break;  
             case 'U':
-                f = 8;
+                f = 9;
                 break;
             case 'WQ':
-                f = 9;
+                f = 10;
                 break;
             case 'TH':
                 // Not part of preston-blair default.
                 // This part of preston-blair extended.
-                f = 10;
+                f = 11;
                 break;
             default:
                 f = -1;
